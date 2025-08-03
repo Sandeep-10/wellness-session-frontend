@@ -1,0 +1,185 @@
+.mysession-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.mysession-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    background: linear-gradient(145deg, #050505 0%, #ffffff 100%);  
+    border-radius: 15px;
+    color: white;
+    height: 80%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mysession-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.mysession-subtitle {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.mysession-stats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+
+.stat-item {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+}
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.sessions-container {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #6c757d;
+}
+
+.empty-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.empty-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.create-session-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.create-session-btn button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.sessions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.session-card {
+    width: 27%;
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+    .mysession-container {
+        padding: 1rem;
+    }
+    
+    .mysession-title {
+        font-size: 2rem;
+    }
+    
+    .mysession-subtitle {
+        font-size: 1rem;
+    }
+    
+    .mysession-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        min-width: 120px;
+        padding: 1rem 1.5rem;
+    }
+    
+    .sessions-container {
+        padding: 1.5rem;
+    }
+    
+    .empty-state {
+        padding: 2rem 1rem;
+    }
+    
+    .sessions-list {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .session-card {
+        flex: 0 0 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mysession-title {
+        font-size: 1.8rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .create-session-btn button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+} 

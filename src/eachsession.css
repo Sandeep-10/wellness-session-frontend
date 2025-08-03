@@ -1,0 +1,106 @@
+.session-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    border: 2px solid #000000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.session-card a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.session-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+}
+
+.session-titlee{
+    font-size: 1.8rem;
+    color: #000000;
+    margin: 0;
+    font-weight: bold;
+}
+
+.session-status {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    margin-left: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.session-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.session-date {
+    color: #000000;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .session-card {
+        padding: 20px;
+        width: 100%;
+        min-height: 200px;
+        height: auto;
+    }
+    
+    .session-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .session-title {
+        font-size: 1.2rem;
+    }
+    
+    .session-status {
+        margin-left: 0;
+        align-self: flex-start;
+    }
+    
+    .session-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .session-icon {
+        top: 15px;
+        right: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .session-card {
+        padding: 15px;
+        width: 100%;
+        min-height: 180px;
+        height: auto;
+    }
+    
+    .session-title {
+        font-size: 1.1rem;
+    }
+    
+    .session-status {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+} 

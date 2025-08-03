@@ -1,0 +1,210 @@
+.session-editor-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.editor-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+    background: linear-gradient(135deg, #050505 0%, #fffeff 100%);
+    color: white;
+    font-weight: bold;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.editor-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.editor-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+    font-weight: 300;
+}
+
+.editor-form {
+    padding: 20px 30px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;   
+    background: #f8f9fa;
+}
+
+.form-input::placeholder {
+    color: #999;
+}
+
+.status-section {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #e1e5e9;
+}
+
+.status-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.status-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.status-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.status-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #000000;
+    cursor: pointer;
+}
+
+.status-option label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;   
+}
+
+.error-message {
+    color: #721c24;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.result-message {
+    color: #14b53a;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+}
+
+.btn-save {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.btn-publish {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+}
+
+@media (max-width: 768px) {
+    .session-editor-container {
+        padding: 20px 15px;
+    }
+    
+    .editor-header {
+        padding: 30px 20px;
+    }
+    
+    .editor-title {
+        font-size: 2rem;
+    }
+    
+    .editor-form {
+        padding: 30px 20px;
+    }
+    
+    .status-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .action-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .editor-title {
+        font-size: 1.8rem;
+    }
+    
+    .editor-header {
+        padding: 25px 15px;
+    }
+    
+    .editor-form {
+        padding: 25px 15px;
+    }
+    
+    .form-input {
+        padding: 12px 15px;
+    }
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+} 
