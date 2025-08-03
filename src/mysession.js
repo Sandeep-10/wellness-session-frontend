@@ -34,7 +34,7 @@ class MySession extends Component {
                 'Authorization': `Bearer ${Cookies.get('jwt_token')}`
             }
         }
-        const response = await fetch('https://backend-wellness-session.vercel.app/sessions', options);
+        const response = await fetch('https://backend-wellness-session.onrender.com/sessions', options);
         const responseJson = await response.json();
         console.log(responseJson);
         if (response.ok) {
