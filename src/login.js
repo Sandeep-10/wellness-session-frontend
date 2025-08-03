@@ -47,7 +47,7 @@ class Login extends Component {
             body: JSON.stringify(details)
         }
 
-        const response = await fetch('http://localhost:5000/login', data);
+        const response = await fetch('https://backend-wellness-session.vercel.app/login', data);
         const responseJson = await response.json();
         console.log(responseJson);
         if (response.ok) {
