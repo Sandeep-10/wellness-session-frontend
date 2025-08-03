@@ -24,9 +24,9 @@ class ParticularSession extends Component {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${Cookies.get('jwt_token')}`
-            }
+            }   
         }
-        const response = await fetch(`https://backend-wellness-session.onrender.com/my-sessions/${id}`, options);
+        const response = await fetch(`http://localhost:5000/my-sessions/${id}`, options);
         const responseJson = await response.json();
         console.log(responseJson);
         if (response.ok) {

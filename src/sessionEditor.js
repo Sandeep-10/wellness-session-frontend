@@ -76,12 +76,12 @@ class SessionEditor extends Component {
             },
             body: JSON.stringify(sessionData)
         }
-        const response = await fetch('https://backend-wellness-session.onrender.com/my-sessions/save-draft', options);
+        const response = await fetch('http://localhost:5000/my-sessions/save-draft', options);
         const data = await response.json();
         if(response.ok){
-            this.setState({result: data.message, displayResult: true,isLoading: false});
+            this.setState({result: data.message, displayResult: true,isLoading: false,error: ''});
         }else{
-            this.setState({error: data.error});
+            this.setState({error: data.error,result: '',displayResult: false});
             return;
         }
         console.log(data);
@@ -98,7 +98,7 @@ class SessionEditor extends Component {
                 },
                 body: JSON.stringify(publishData)
             }
-            const publishResponse = await fetch('https://backend-wellness-session.onrender.com/my-sessions/publish', publishOptions);
+            const publishResponse = await fetch('http://localhost:5000/my-sessions/publish', publishOptions);
             const publishDataResult = await publishResponse.json();
             
             console.log(publishDataResult);
@@ -108,7 +108,7 @@ class SessionEditor extends Component {
                 this.setState({error: publishDataResult.error});
                 this.setState({publish: false});
                 return;
-            }
+            }   
         }
     }
 

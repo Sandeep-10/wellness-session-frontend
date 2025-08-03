@@ -43,14 +43,14 @@ class Register extends Component {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(details)
-        }
-        const response = await fetch('https://backend-wellness-session.onrender.com/login/register', data);
+        }       
+        const response = await fetch('http://localhost:5000/login/register', data);
         const responseJson = await response.json();
         console.log(responseJson);
         if (response.ok) {
-            this.setState({message: responseJson.message});
+            this.setState({message: responseJson.message,error: ''});
         } else {
-            this.setState({error: responseJson.error,emailError: false,passwordError: false});
+            this.setState({error: responseJson.error,emailError: false,passwordError: false,message: ''});
         }
     }
 
