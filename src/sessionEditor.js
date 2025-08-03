@@ -76,7 +76,7 @@ class SessionEditor extends Component {
             },
             body: JSON.stringify(sessionData)
         }
-        const response = await fetch('http://localhost:5000/my-sessions/save-draft', options);
+        const response = await fetch('https://backend-wellness-session.vercel.app/my-sessions/save-draft', options);
         const data = await response.json();
         if(response.ok){
             this.setState({result: data.message, displayResult: true,isLoading: false});
@@ -98,7 +98,7 @@ class SessionEditor extends Component {
                 },
                 body: JSON.stringify(publishData)
             }
-            const publishResponse = await fetch('http://localhost:5000/my-sessions/publish', publishOptions);
+            const publishResponse = await fetch('https://backend-wellness-session.vercel.app/my-sessions/publish', publishOptions);
             const publishDataResult = await publishResponse.json();
             
             console.log(publishDataResult);

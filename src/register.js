@@ -44,7 +44,7 @@ class Register extends Component {
             },
             body: JSON.stringify(details)
         }
-        const response = await fetch('http://localhost:5000/login/register', data);
+        const response = await fetch('https://backend-wellness-session.vercel.app/login/register', data);
         const responseJson = await response.json();
         console.log(responseJson);
         if (response.ok) {
